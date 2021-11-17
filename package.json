@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "node application",
+  "author": "Decagon <info@decagon.dev>",
+  "private": true,
+  "scripts": {
+    "serve": "node lib/app",
+    "dev": "nodemon lib/app.js",
+    "compile": "yarn tsc",
+    "compile:watch": "yarn tsc --watch --preserveWatchOutput"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.22",
+    "fs": "^0.0.1-security",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.4.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
